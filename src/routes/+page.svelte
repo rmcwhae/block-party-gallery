@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	export let data;
+
+	$: images = data.images;
+
+	console.log('images', images);
+</script>
+
+<h1>Gallery</h1>
