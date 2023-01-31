@@ -1,5 +1,7 @@
 # Gallery
 
+!["Demo view"](./demo.png)
+
 Populate the `static/content` folder with images and their corresponding JSON files, e.g. `Block Party 64.json` and `Block Party 64.png`.
 
 ## Running the App
