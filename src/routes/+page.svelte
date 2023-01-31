@@ -2,6 +2,9 @@
 	export let data;
 
 	$: images = data.images;
+	$: parameters = data.parameters;
+
+	$: console.log('parameters', parameters);
 </script>
 
 <h1>Gallery</h1>

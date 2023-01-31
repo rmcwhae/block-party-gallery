@@ -13,17 +13,17 @@ export async function GET() {
 		transparency: [],
 		colorDistribution: [],
 		heightDistribution: [],
-		colorJitterAmt: [],
-		W: [],
+		// colorJitterAmt: [], // all 0.02
+		// W: [], // all 25
 		size: [],
 		gap: [],
 		balance: [],
 		stopProb: [],
 		minDepth: [],
-		smallestW: [],
+		// smallestW: [], // all 1
 		maxH: [],
-		maxHmult: [],
-		maxHradius: []
+		maxHmult: []
+		// maxHradius: [] // all 1000
 		// special: [] // all empty arrays
 	};
 

@@ -1,7 +1,9 @@
 export async function load({ fetch }) {
-	const images = await fetch(`/api/images`).then((r) => r.json());
+	const images = await fetch('/api/images').then((r) => r.json());
+	const parameters = await fetch('/api/parameters').then((r) => r.json());
 
 	return {
-		images
+		images,
+		parameters
 	};
 }
