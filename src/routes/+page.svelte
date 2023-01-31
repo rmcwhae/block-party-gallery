@@ -3,14 +3,17 @@
 
 	$: images = data.images;
 	$: parameters = data.parameters;
-
-	$: console.log('parameters', parameters);
 </script>
 
 <h1>Gallery</h1>
 
 <div class="flex">
-	<div class="sidebar">Filters</div>
+	<div class="sidebar">
+		<h2>Filters</h2>
+		{#each Object.entries(parameters) as [key, value]}
+			<p>{key}</p>
+		{/each}
+	</div>
 	<div class="grid">
 		{#each images as image}
 			<img src={image.href} alt={image.name} width={200} height={200} />
@@ -19,6 +22,11 @@
 </div>
 
 <style>
+	:global(body) {
+		margin: 1em;
+		padding: 0;
+		font-family: sans-serif;
+	}
 	.grid {
 		flex-grow: 3;
 		display: grid;
