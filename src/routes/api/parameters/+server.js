@@ -37,5 +37,9 @@ export async function GET() {
 		}
 	});
 
+	for (const key in parameters) {
+		parameters[key].sort(); // sort alphabetically
+	}
+
 	return json(parameters);
 }
