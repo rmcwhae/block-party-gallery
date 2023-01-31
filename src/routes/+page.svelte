@@ -6,8 +6,6 @@
 	$: parameters = data.parameters;
 </script>
 
-<h1>Gallery</h1>
-
 <div class="flex">
 	<div class="sidebar">
 		<h2>Filters</h2>
