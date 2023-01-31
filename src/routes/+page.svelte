@@ -44,8 +44,6 @@
 
 		return true;
 	});
-
-	$: console.log('colorPalette', colorPalette);
 </script>
 
 <div class="flex">
