@@ -1,8 +1,10 @@
 # Gallery
 
+A filterable gallery of images, built with [SvelteKit](https://kit.svelte.dev/). Note that this is not optimized: images are not responsive, and the gallery is not paginated. This is a proof-of-concept, only meant to be run locally.
+
 !["Demo view"](./demo.png)
 
-Populate the `static/content` folder with images and their corresponding JSON files, e.g. `Block Party 64.json` and `Block Party 64.png`.
+Populate the `static/content` folder (may require creation) with images and their corresponding JSON files, e.g. `Block Party 64.json` and `Block Party 64.png`.
 
 ## Running the App
 
