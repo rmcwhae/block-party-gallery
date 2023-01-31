@@ -4,7 +4,7 @@ import { images } from '$lib/images';
 
 export async function GET() {
 	const parameters = {
-		seed: [],
+		// seed: [], // Lots of different values, each may be unique?
 		colorPalette: [],
 		repeat: [],
 		repeatMaterials: [],
@@ -24,7 +24,7 @@ export async function GET() {
 		maxH: [],
 		maxHmult: [],
 		maxHradius: []
-		// special: []
+		// special: [] // all empty arrays
 	};
 
 	images.map((image) => {
