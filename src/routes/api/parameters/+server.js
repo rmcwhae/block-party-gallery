@@ -38,7 +38,11 @@ export async function GET() {
 	});
 
 	for (const key in parameters) {
-		parameters[key].sort(); // sort alphabetically
+		if (typeof parameters[key][0] === 'number') {
+			parameters[key].sort((a, b) => a - b); // sort numerically
+		} else {
+			parameters[key].sort(); // sort alphabetically
+		}
 	}
 
 	return json(parameters);
