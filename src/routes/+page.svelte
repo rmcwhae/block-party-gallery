@@ -1,4 +1,5 @@
 <script>
+	import MultiSelect from '$lib/components/MultiSelect.svelte';
 	export let data;
 
 	$: images = data.images;
@@ -10,8 +11,8 @@
 <div class="flex">
 	<div class="sidebar">
 		<h2>Filters</h2>
-		{#each Object.entries(parameters) as [key, value]}
-			<p>{key}</p>
+		{#each Object.entries(parameters) as [key, values]}
+			<MultiSelect {key} {values} />
 		{/each}
 	</div>
 	<div class="grid">
